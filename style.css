@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #6B1F35;
+}
+
+body {
+    background-color: #FFFFFF;
+    background-image: url("Imagens/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+a {
+    color: #6B1F35;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px 40px;
+    background: #F8D7E0;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-imagem {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cabecalho nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu a {
+    color: #6B1F35;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    color: #A8264F;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.hero {
+    background: #F8D7E0;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 24px auto 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.destaque {
+    font-family: 'Libre Caslon Condensed', serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.frase {
+    width: 100%;
+    max-width: 1000px;
+    margin: 24px auto 0;
+    padding: 24px;
+    background: rgba(248, 215, 224, 0.85);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.frase p {
+    font-family: 'Libre Caslon Condensed', serif;
+    font-size: 28px;
+}
+
+.bloco {
+    width: 250px;
+    max-width: 100%;
+    padding: 24px;
+    background: rgba(248, 215, 224, 0.85);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.bloco p {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #F8D7E0;
+    color: #6B1F35;
+    text-align: center;
+    padding: 24px;
+    margin-top: 48px;
+}
+
+.sobre {
+    max-width: 1000px;
+    margin: auto;
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.foto-perfil {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.texto-perfil {
+    max-width: 600px;
+    text-align: left;
+}
+
+.sobre-a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.biografia {
+    margin-top: 16px;
+    background: rgba(248, 215, 224, 0.85);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.biografia p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.titulo-sec {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.titulo-sec,
+.sobre-a,
+.texto-perfil h1 {
+    color: #A8264F;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.card {
+    width: 250px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.card img {
+    width: 250px;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    margin-top: 12px;
+}
+
+.card p {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 20px;
+    background: #6B1F35;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .perfil {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .foto-perfil {
+        width: 240px;
+        height: 240px;
+    }
+
+    .texto-perfil {
+        max-width: 100%;
+    }
+
+    .frase p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecalho {
+        padding: 16px;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho nav {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .menu {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 24px;
+    }
+}
